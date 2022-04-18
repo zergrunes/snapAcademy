@@ -4,11 +4,14 @@
 body {
     margin: 0;
     background: #e3e1df;
+    line-height: 1.6;
+    height: 100vh;
     font-family: 'Nunito', sans-serif; 
     font-weight: 600;
 }
 .container {
     width: 90%;
+    height: 90%;
     margin: 0 auto;
 }
 header {
@@ -27,16 +30,22 @@ header::after {
 }
 nav {
     float: right;
+    top: 0;
+    z-index: 1;
+    display: flex;
 }
 
 nav ul {
+    display: flex;
     margin: 0;
     padding: 0;
+    width: 90%;
+    justify-content: right;
     list-style: none;
 }
 nav li {
     display: inline-block;
-    margin-left: 60px;
+    margin-left: 50px;
     padding-top: 30px;
     position: relative;
 }
@@ -45,7 +54,7 @@ nav a {
     color: #66545e;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 nav a::hover {
@@ -68,47 +77,34 @@ nav a:hover::before {
     width: 100%;
 }
 
-h2 {
-    display: inline-block;
-    position:relative;
-    left: 50%;
-    margin:0;
-    padding: 5px 10px;
-    transform: translateX(-50%);
-    color: #000;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 25px;
-    font-weight: 400;
-    letter-spacing: .32em;
-    text-align: center;
-    background-color: #e3e1df;
-
-}
-
 h4 {
-    text-align: center;
+    text-align:justify;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 400;
 }
 
 .tuxBilly {
-    width: 200px;
-    border-radius: 100px;
-    margin: 30px auto 20px;
-    display:block; 
-}
+    float:left;
+    width: 45%;
+    padding-top: 50px;
 
+}
+/* Header font */
+h2 {
+    font-family: Anton;
+    text-transform: uppercase;
+    margin-top: 10%;
+    margin-bottom: 0%;
+}
+/* Main description settings */
 .description {
-    display: inline-flex;
-    justify-content: center;
     text-align: justify;
-    position: relative;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Nunito';
     font-weight: 400;
     font-size: 20px;
-    padding: 10px;
-}
-p {
+    margin-top: 0%;
     margin-left: 200px;
     margin-right: 200px;
 }
+
+

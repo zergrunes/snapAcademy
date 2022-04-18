@@ -4,7 +4,6 @@ body {
     font-family: 'Nunito';
     font-weight: 600px;
 }
-
 a:link { 
     text-decoration: none;
     color:black; 
@@ -21,6 +20,74 @@ h1 {
 
 h3 {
     text-align: center;
+}
+
+.container {
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+}
+.logo {
+    float: left;
+    padding: 5px 0;
+    
+}
+header {
+    background: #f6e0b5;
+    border: 3px solid #66545e;
+}
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+nav {
+    float: right;
+    top: 0;
+    z-index: 1;
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    justify-content: right;
+    list-style: none;
+}
+nav li {
+    display: inline-block;
+    margin-left: 50px;
+    padding-top: 30px;
+    position: relative;
+}
+
+nav a {
+    color: #66545e;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+nav a::hover {
+    color: #000;
+}
+
+nav a::before {
+    content:'';
+    display: block;
+    height: 5px;
+    background-color: #66545e;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
 }
 .image {
     --gap: 16px;
