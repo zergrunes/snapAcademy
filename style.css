@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 10px;
-    background-image:url('/images/cpp.jpg');
 }
 .brand {
     width: 60px;
@@ -16,10 +15,17 @@
     text-align: center;
     background: #000;
 }
-.wrap-flex {
-    display: flex;
-    font-size: 30px;
+
+.name {
+    text-align: center;
     font-family: Georgia, serif;
-    justify-content: center;
-    background-color: transparent;
+    font-size: 35px;
+}
+
+.tldr {
+    text-align: center;
+}
+
+.desc {
+    display: flex;
 }
