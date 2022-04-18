@@ -7,7 +7,7 @@ body {
     line-height: 1.6;
     height: 100vh;
     font-family: Anton; 
-    font-weight: 600;
+    font-weight: 400;
 }
 .container {
     width: 90%;
@@ -51,10 +51,10 @@ nav li {
 }
 
 nav a {
-    color: #66545e;
+    color: #000;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 nav a::hover {

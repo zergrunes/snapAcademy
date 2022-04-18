@@ -2,7 +2,7 @@ body {
     margin: 0;
     background-color: #e3e1df;
     font-family: Anton;
-    font-weight: 600px;
+    font-weight: 400px;
 }
 a:link { 
     text-decoration: none;
@@ -64,10 +64,10 @@ nav li {
 }
 
 nav a {
-    color: #66545e;
+    color: #000;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 nav a::hover {
