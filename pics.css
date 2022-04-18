@@ -1,7 +1,17 @@
 body {
     margin: 0;
+    background-color: #e3e1df;
+    font-family: 'Nunito';
+    font-weight: 600px;
+}
+h1 {
+    text-align: center;
 }
 
+h3 {
+    text-align: center;
+    text-decoration: none;
+}
 .image {
     --gap: 16px;
     --num-cols: 4;
