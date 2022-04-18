@@ -1,31 +1,102 @@
-*{
+* {
+    box-sizing: border-box;
+}
+body {
     margin: 0;
-    padding: 10px;
+    background: #e3e1df;
+    font-family: 'Nunito', sans-serif; 
+    font-weight: 600;
 }
-.brand {
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    border-radius: 50%;
-    font-family: 'Trebuchet MS', sans-serif;
-    font-size: 35px;
-    margin-left: auto;
-    margin-right: auto;
-    color: #fff;
-    text-align: center;
-    background: #000;
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+header {
+    background: #f6e0b5;
+    border: 3px solid #66545e;
+}
+.logo {
+    float: left;
+    padding: 5px 0;
+    
+}
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+nav {
+    float: right;
 }
 
-.name {
-    text-align: center;
-    font-family: Georgia, serif;
-    font-size: 35px;
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li {
+    display: inline-block;
+    margin-left: 60px;
+    padding-top: 30px;
+    position: relative;
 }
 
-.tldr {
+nav a {
+    color: #66545e;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+nav a::hover {
+    color: #000;
+}
+
+nav a::before {
+    content:'';
+    display: block;
+    height: 5px;
+    background-color: #66545e;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+h2 {
+    display: inline-block;
+    position:relative;
+    left: 50%;
+    margin:0;
+    padding: 5px 10px;
+    border: 1px solid #66545e;
+    transform: translateX(-50%);
+    color: #000;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: .32em;
     text-align: center;
+    background-color: #e3e1df;
+
+}
+
+.tuxBilly {
+    width: 200px;
+    border-radius: 100px;
+    margin: 10px auto 20px;
+    display:block; 
 }
 
 .desc {
-    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;    
 }

@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+}
+
+.image {
+    --gap: 16px;
+    --num-cols: 4;
+    --row-heights: 300px;
+
+    box-sizing: border-box;
+    padding: var(--gap);
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-heights);
+    gap: var(--gap);
+}
+
+.image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-col-2 {
+    grid-column: span 2;
+}
+
+.image-row-2 {
+    grid-row: span 2;
+}
+
+@media screen and (max-width: 1024px) {
+    .image {
+        --num-cols: 2;
+        --row-heights: 200px;
+    }
+}
